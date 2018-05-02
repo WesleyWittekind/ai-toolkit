@@ -26,21 +26,6 @@
     <ClCompile Include="Common\DeviceResources.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClInclude Include="Content\Sample3DSceneRenderer.h">
-      <Filter>Content</Filter>
-    </ClInclude>
-    <ClInclude Include="Content\ShaderStructures.h">
-      <Filter>Content</Filter>
-    </ClInclude>
-    <ClCompile Include="Content\Sample3DSceneRenderer.cpp">
-      <Filter>Content</Filter>
-    </ClCompile>
-    <FxCompile Include="Content\SamplePixelShader.hlsl">
-      <Filter>Content</Filter>
-    </FxCompile>
-    <FxCompile Include="Content\SampleVertexShader.hlsl">
-      <Filter>Content</Filter>
-    </FxCompile>
     <Image Include="Assets\LockScreenLogo.scale-200.png">
       <Filter>Assets</Filter>
     </Image>
@@ -62,21 +47,56 @@
     <Image Include="Assets\Wide310x150Logo.scale-200.png">
       <Filter>Assets</Filter>
     </Image>
+    <Filter Include="Content\graphics">
+      <UniqueIdentifier>{8f312b01-0072-4689-a8e5-af8c58a1c57e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\core">
+      <UniqueIdentifier>{ef9916cf-d865-488d-9a7f-5771c792a92c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp" />
     <ClCompile Include="ai_toolkitMain.cpp" />
     <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Content\Sample3DSceneRenderer.cpp">
+      <Filter>Content\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\Allocator.cpp">
+      <Filter>Content\core</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\Guid.cpp">
+      <Filter>Content\core</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App.h" />
     <ClInclude Include="ai_toolkitMain.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="Content\Sample3DSceneRenderer.h">
+      <Filter>Content\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\ShaderStructures.h">
+      <Filter>Content\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Allocator.h">
+      <Filter>Content\core</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Guid.h">
+      <Filter>Content\core</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ai-toolkit_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Content\SamplePixelShader.hlsl">
+      <Filter>Content\graphics</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\SampleVertexShader.hlsl">
+      <Filter>Content\graphics</Filter>
+    </FxCompile>
   </ItemGroup>
 </Project>
