@@ -2,14 +2,14 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Common">
-      <UniqueIdentifier>042f0cbc-c41f-4ff0-97d1-fa3511b9979e</UniqueIdentifier>
+      <UniqueIdentifier>97c41ce8-fee4-461f-ae98-a8410a724e9c</UniqueIdentifier>
     </Filter>
     <Filter Include="Assets">
-      <UniqueIdentifier>862f44a8-8fa0-4ce6-ba8c-eb122e2d5a59</UniqueIdentifier>
+      <UniqueIdentifier>ffecb48b-ef55-42a1-8641-f2dfc625f5f8</UniqueIdentifier>
       <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
     </Filter>
     <Filter Include="Content">
-      <UniqueIdentifier>da6abce1-febf-412b-b2ac-01d29dc84898</UniqueIdentifier>
+      <UniqueIdentifier>9f831c94-755f-4334-b8b9-21e5bc53d2bb</UniqueIdentifier>
     </Filter>
     <ClInclude Include="Common\d3dx12.h">
       <Filter>Common</Filter>
@@ -26,6 +26,21 @@
     <ClCompile Include="Common\DeviceResources.cpp">
       <Filter>Common</Filter>
     </ClCompile>
+    <ClInclude Include="Content\Sample3DSceneRenderer.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\ShaderStructures.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClCompile Include="Content\Sample3DSceneRenderer.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <FxCompile Include="Content\SamplePixelShader.hlsl">
+      <Filter>Content</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\SampleVertexShader.hlsl">
+      <Filter>Content</Filter>
+    </FxCompile>
     <Image Include="Assets\LockScreenLogo.scale-200.png">
       <Filter>Assets</Filter>
     </Image>
@@ -47,42 +62,27 @@
     <Image Include="Assets\Wide310x150Logo.scale-200.png">
       <Filter>Assets</Filter>
     </Image>
-    <Filter Include="Content\graphics">
-      <UniqueIdentifier>{8f312b01-0072-4689-a8e5-af8c58a1c57e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Content\core">
-      <UniqueIdentifier>{ef9916cf-d865-488d-9a7f-5771c792a92c}</UniqueIdentifier>
+    <Filter Include="shared">
+      <UniqueIdentifier>{0015ff44-3b4d-4f85-bdf7-77b9d357e838}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp" />
     <ClCompile Include="ai_toolkitMain.cpp" />
     <ClCompile Include="pch.cpp" />
-    <ClCompile Include="Content\Sample3DSceneRenderer.cpp">
-      <Filter>Content\graphics</Filter>
-    </ClCompile>
-    <ClCompile Include="Content\Allocator.cpp">
-      <Filter>Content\core</Filter>
-    </ClCompile>
-    <ClCompile Include="Content\Guid.cpp">
-      <Filter>Content\core</Filter>
+    <ClCompile Include="..\shared\ModuleLoader.cpp">
+      <Filter>shared</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App.h" />
     <ClInclude Include="ai_toolkitMain.h" />
     <ClInclude Include="pch.h" />
-    <ClInclude Include="Content\Sample3DSceneRenderer.h">
-      <Filter>Content\graphics</Filter>
+    <ClInclude Include="..\shared\Essentials.h">
+      <Filter>shared</Filter>
     </ClInclude>
-    <ClInclude Include="Content\ShaderStructures.h">
-      <Filter>Content\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="Content\Allocator.h">
-      <Filter>Content\core</Filter>
-    </ClInclude>
-    <ClInclude Include="Content\Guid.h">
-      <Filter>Content\core</Filter>
+    <ClInclude Include="..\shared\Module.h">
+      <Filter>shared</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -90,13 +90,5 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ai-toolkit_TemporaryKey.pfx" />
-  </ItemGroup>
-  <ItemGroup>
-    <FxCompile Include="Content\SamplePixelShader.hlsl">
-      <Filter>Content\graphics</Filter>
-    </FxCompile>
-    <FxCompile Include="Content\SampleVertexShader.hlsl">
-      <Filter>Content\graphics</Filter>
-    </FxCompile>
   </ItemGroup>
 </Project>

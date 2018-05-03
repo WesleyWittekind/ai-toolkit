@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "ai_toolkitMain.h"
 #include "Common\DirectXHelper.h"
+#include "../core/core.h"
 
 using namespace ai_toolkit;
 using namespace Windows::Foundation;
@@ -38,6 +39,8 @@ void ai_toolkitMain::Update()
 		// TODO: Replace this with your app's content update functions.
 		m_sceneRenderer->Update(m_timer);
 	});
+
+  g_pCore->Required();
 }
 
 // Renders the current frame according to the current application state.

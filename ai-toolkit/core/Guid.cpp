@@ -1,5 +1,6 @@
 #include "pch.h"
-#include "Guid1.h"
+#include "Guid.h"
+#include "core.h"
 
 
 Guid::Guid()

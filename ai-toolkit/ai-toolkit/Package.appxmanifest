@@ -7,11 +7,11 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="dd1e3801-95f7-4363-a7af-bd299354927a"
+    Name="95e9d1d3-3ca6-4f72-bbb7-775a59d7157b"
     Publisher="CN=wesley"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="dd1e3801-95f7-4363-a7af-bd299354927a" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="95e9d1d3-3ca6-4f72-bbb7-775a59d7157b" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>ai-toolkit</DisplayName>
